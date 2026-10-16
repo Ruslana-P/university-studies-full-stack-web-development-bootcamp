@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ruszlana Pavliuk — UI Engineer</title>
+    <link rel="stylesheet" href="./index_files/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@500;600;700&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="#top">Ruslana</a>
+        <nav aria-label="Main">
+          <ul class="nav">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#more">More</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-heading">
+        <div class="container hero-grid">
+          <div>
+            <img
+              class="hero-photo"
+              src="./index_files/profile.png"
+              alt="Portrait of Ruszlana Pavliuk"
+            />
+          </div>
+          <div>
+            <p class="hero-greeting">Hello,</p>
+            <h1 class="hero-name" id="hero-heading">I'm Ruslana</h1>
+            <p class="hero-role">UI Engineer · React Developer</p>
+            <p class="hero-lead">
+              I build thoughtful, scalable frontends—from first sketch to
+              production. Based on years of shipping React apps in agile teams,
+              with a focus on clean architecture and interfaces people actually
+              enjoy.
+            </p>
+            <div class="hero-tags">
+              <span class="pill">React &amp; TypeScript</span>
+              <span class="pill">Microfrontends</span>
+              <span class="pill">Testing &amp; quality</span>
+              <span class="pill">Remote · EU</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" aria-labelledby="about-title">
+        <div class="container">
+          <h2 class="section-title" id="about-title">About me</h2>
+          <p class="section-subtitle">
+            A short snapshot of how I work and what I care about on product
+            teams.
+          </p>
+          <article class="about-card">
+            <p>
+              Frontend-focused software developer with experience across the
+              full product lifecycle—from concept and design collaboration to
+              deployment and maintenance.
+            </p>
+            <p>
+              I'm passionate about clean code, component-driven architecture,
+              and building interfaces people enjoy using. I thrive in agile,
+              cross-functional environments: sprint planning, code review,
+              mentoring, and delivering features that match real user needs.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" aria-labelledby="skills-title">
+        <div class="container">
+          <h2 class="section-title" id="skills-title">Skills</h2>
+          <p class="section-subtitle">
+            Grouped the way I think about the stack—each card is a slice of my
+            day-to-day work.
+          </p>
+
+          <div class="skills-grid">
+            <article class="skill-card skill-card--core">
+              <div class="skill-card__icon" aria-hidden="true">⚛️</div>
+              <h3>Core frontend</h3>
+              <p>
+                Building component trees, typed APIs, and maintainable UI logic
+                for long-lived products.
+              </p>
+              <ul class="chip-list">
+                <li>React</li>
+                <li>TypeScript</li>
+                <li>JavaScript</li>
+              </ul>
+            </article>
+
+            <article class="skill-card skill-card--state">
+              <div class="skill-card__icon" aria-hidden="true">🔄</div>
+              <h3>State &amp; data</h3>
+              <p>
+                Routing, server state, and predictable client state for complex
+                dashboards and workflows.
+              </p>
+              <ul class="chip-list">
+                <li>Redux Toolkit</li>
+                <li>React Query</li>
+                <li>React Router</li>
+              </ul>
+            </article>
+
+            <article class="skill-card skill-card--ui">
+              <div class="skill-card__icon" aria-hidden="true">🎨</div>
+              <h3>UI &amp; styling</h3>
+              <p>
+                Design systems, responsive layouts, charts, and close
+                collaboration with design in Figma.
+              </p>
+              <ul class="chip-list">
+                <li>MUI</li>
+                <li>Bootstrap</li>
+                <li>Tailwind</li>
+                <li>Highcharts</li>
+                <li>Figma</li>
+              </ul>
+            </article>
+
+            <article class="skill-card skill-card--test">
+              <div class="skill-card__icon" aria-hidden="true">✅</div>
+              <h3>Testing</h3>
+              <p>
+                Unit, integration, and E2E coverage to keep releases stable as
+                codebases grow.
+              </p>
+              <ul class="chip-list">
+                <li>Jest</li>
+                <li>Cypress</li>
+              </ul>
+            </article>
+
+            <article class="skill-card skill-card--tools">
+              <div class="skill-card__icon" aria-hidden="true">🛠️</div>
+              <h3>Tools &amp; workflow</h3>
+              <p>
+                Day-to-day delivery: tickets, docs, Git hosting, API checks, and
+                AI-assisted development.
+              </p>
+              <ul class="chip-list">
+                <li>Jira</li>
+                <li>Confluence</li>
+                <li>Bitbucket</li>
+                <li>GitLab</li>
+                <li>GitHub</li>
+                <li>Postman</li>
+                <li>SQL</li>
+                <li>GitHub Copilot</li>
+              </ul>
+            </article>
+
+            <article class="skill-card skill-card--arch">
+              <div class="skill-card__icon" aria-hidden="true">🏗️</div>
+              <h3>Architecture</h3>
+              <p>
+                Modern SPA patterns and split frontends that scale across teams
+                and releases.
+              </p>
+              <ul class="chip-list">
+                <li>Microfrontends</li>
+                <li>SPA</li>
+                <li>Responsive UI</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="more" aria-labelledby="more-title">
+        <div class="container">
+          <h2 class="section-title" id="more-title">
+            Languages &amp; education
+          </h2>
+          <p class="section-subtitle">
+            Background that supports communication with global teams and ongoing
+            learning.
+          </p>
+
+          <div class="two-col">
+            <article class="info-card">
+              <h3>Languages</h3>
+              <div class="lang-row">
+                <span>Ukrainian</span><span class="lang-level">Native</span>
+              </div>
+              <div class="lang-row">
+                <span>Russian</span><span class="lang-level">Native</span>
+              </div>
+              <div class="lang-row">
+                <span>English</span><span class="lang-level">Professional</span>
+              </div>
+              <div class="lang-row">
+                <span>Polish</span><span class="lang-level">Professional</span>
+              </div>
+              <div class="lang-row">
+                <span>Hungarian</span
+                ><span class="lang-level">Communicative</span>
+              </div>
+            </article>
+
+            <article class="info-card">
+              <h3>Education</h3>
+              <div class="edu-item">
+                <h4>Bachelor's Degree</h4>
+                <p class="edu-field">Computer Science</p>
+                <p class="edu-school">
+                  National Technical University of Ukraine "Igor Sikorsky KPI"
+                </p>
+                <p class="edu-year">2023 – Current</p>
+              </div>
+              <div class="edu-item">
+                <h4>Master's Degree</h4>
+                <p class="edu-field">
+                  Management of Organizations &amp; Administration
+                </p>
+                <p class="edu-school">
+                  O.M. Beketov National University of Urban Economy in Kharkiv
+                </p>
+                <p class="edu-year">2011 – 2016</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact" aria-labelledby="contact-title">
+        <div class="container">
+          <h2 class="section-title" id="contact-title">Get in touch</h2>
+          <div class="contact-box">
+            <p>
+              Interested in frontend engineering, React architecture, or
+              collaboration on a product? You can find me on LinkedIn—happy to
+              connect.
+            </p>
+            <a
+              class="btn"
+              href="https://www.linkedin.com/in/ruslana-pavliuk/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Connect on LinkedIn</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a
+        href="https://www.linkedin.com/in/ruslana-pavliuk/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >LinkedIn</a
+      >
+      <p class="footer-copy">© Ruszlana Pavliuk</p>
+    </footer>
+  </body>
+</html>
