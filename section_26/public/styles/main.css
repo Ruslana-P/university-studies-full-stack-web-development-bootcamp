@@ -1,0 +1,189 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #fff;
+  color: #111;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+a {
+  color: #00e;
+}
+
+a:visited {
+  color: #551a8b;
+}
+
+.page {
+  display: flex;
+  align-items: flex-start;
+  gap: 36px;
+  max-width: 860px;
+  margin: 28px auto;
+  padding: 0 20px;
+}
+
+.side {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  width: 110px;
+  flex-shrink: 0;
+}
+
+.brand {
+  margin: 0 0 10px;
+  color: #bbb;
+  font-size: 18px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.side a {
+  display: block;
+  padding: 3px 8px;
+  border: 1px solid #c8c8c8;
+  background: #ececec;
+  color: #111;
+  text-decoration: none;
+  text-align: center;
+}
+
+.side a:hover {
+  background: #e0e0e0;
+}
+
+main {
+  flex: 1;
+  min-width: 0;
+}
+
+h1 {
+  margin: 0 0 12px;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.intro {
+  margin: 0 0 16px;
+  max-width: 42em;
+}
+
+.essays {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.essays li {
+  margin: 3px 0;
+}
+
+article h1 {
+  letter-spacing: 0;
+  text-transform: none;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 26px;
+  font-weight: normal;
+}
+
+.essay {
+  max-width: 38em;
+  white-space: pre-wrap;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 17px;
+  line-height: 1.55;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+  margin-top: 22px;
+}
+
+.actions form {
+  margin: 0;
+}
+
+button,
+.editor input,
+.editor textarea {
+  font: inherit;
+}
+
+button {
+  padding: 4px 12px;
+  border: 1px solid #c8c8c8;
+  background: #ececec;
+  color: #111;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #e0e0e0;
+}
+
+.editor {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  max-width: 38em;
+}
+
+.editor input,
+.editor textarea {
+  width: 100%;
+  padding: 6px 8px;
+  border: 1px solid #ccc;
+}
+
+.editor textarea {
+  resize: vertical;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 16px;
+  line-height: 1.45;
+}
+
+.error {
+  color: #900;
+}
+
+@media (max-width: 640px) {
+  .page {
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 16px;
+  }
+
+  .side {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+  }
+
+  .brand {
+    width: 100%;
+    margin-bottom: 4px;
+  }
+
+  .side a {
+    min-width: 88px;
+  }
+
+  article h1 {
+    font-size: 22px;
+  }
+
+  .essay {
+    font-size: 16px;
+  }
+}

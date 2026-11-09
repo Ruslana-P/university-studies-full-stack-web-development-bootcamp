@@ -1,0 +1,15 @@
+<%- include("partials/header") %>
+<h1>Essays</h1>
+<p class="intro">
+  Short notes, listed by title. They stay in memory only and disappear when the server stops.
+</p>
+<% if (posts.length === 0) { %>
+  <p>No essays yet. <a href="/new">Write one</a>.</p>
+<% } else { %>
+  <ul class="essays">
+    <% posts.forEach((post) => { %>
+      <li><a href="/posts/<%= post.id %>"><%= post.title %></a></li>
+    <% }) %>
+  </ul>
+<% } %>
+<%- include("partials/footer") %>

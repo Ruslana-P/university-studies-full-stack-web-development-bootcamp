@@ -1,0 +1,16 @@
+<%- include("partials/header") %>
+<h1><%= heading %></h1>
+<% if (typeof error !== "undefined") { %>
+  <p class="error"><%= error %></p>
+<% } %>
+<form action="<%= action %>" method="POST" class="editor">
+  <label for="title">Title</label>
+  <input id="title" name="title" type="text" value="<%= post.title %>" required>
+  <label for="body">Text</label>
+  <textarea id="body" name="body" rows="14" required><%= post.body %></textarea>
+  <div class="actions">
+    <button type="submit"><%= button %></button>
+    <a href="/">Cancel</a>
+  </div>
+</form>
+<%- include("partials/footer") %>

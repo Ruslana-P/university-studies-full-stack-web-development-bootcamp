@@ -1,0 +1,13 @@
+<%- include("partials/header") %>
+<article>
+  <h1><%= post.title %></h1>
+  <div class="essay"><%= post.body %></div>
+  <div class="actions">
+    <a href="/posts/<%= post.id %>/edit">Edit</a>
+    <form action="/posts/<%= post.id %>/delete" method="POST" onsubmit="return confirm('Delete this essay?');">
+      <button type="submit">Delete</button>
+    </form>
+    <a href="/">All essays</a>
+  </div>
+</article>
+<%- include("partials/footer") %>
